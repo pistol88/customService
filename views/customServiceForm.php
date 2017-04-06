@@ -12,8 +12,7 @@ $this->registerJs("
         jQuery.post($(form).attr('action'), data,
             function(json) {
                 if(json.result == 'success') {
-                    $('#custom-service').modal('hide');
-                    $('#custom-service input[type=text]').val('');
+                    $('#add-custom-service-form input[type=text]').val('');
                     pistol88.cart.addElement('\\\backend\\\widgets\\\customService\\\models\\\Custom', json.id, 1, json.price, [], '" . $addToCart . "');
                 }
                 else {
