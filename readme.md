@@ -25,4 +25,6 @@ CREATE TABLE IF NOT EXISTS `service_custom` (
   `price` int(11) DEFAULT NULL,
   `date` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `service_custom` ADD PRIMARY KEY(`id`);
 ```
