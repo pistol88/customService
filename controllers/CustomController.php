@@ -36,11 +36,10 @@ class CustomController extends Controller
         $customServiceModel = new Custom;
         
         if ($customServiceModel->load(Yii::$app->request->post()) && $customServiceModel->save()) {
-            yii::$app->cart->put($customServiceModel);
             if(yii::$app->request->post('ajax')) {
                 return json_encode(['result' => 'success', 'id' => $customServiceModel->id, 'price' => $customServiceModel]);
             } else {
-                \Yii::$app->session->setFlash('customServiceBuy', 'Â êîðçèíå!');
+                \Yii::$app->session->setFlash('customServiceBuy', 'Ã‚ ÃªÃ®Ã°Ã§Ã¨Ã­Ã¥!');
             }
         }
     }
