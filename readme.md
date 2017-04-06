@@ -27,4 +27,5 @@ CREATE TABLE IF NOT EXISTS `service_custom` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 ALTER TABLE `service_custom` ADD PRIMARY KEY(`id`);
+ALTER TABLE `service_custom` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT;
 ```
