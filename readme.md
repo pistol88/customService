@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS `service_custom` (
   `id` int(11) NOT NULL,
   `name` varchar(155) DEFAULT NULL,
   `price` int(11) DEFAULT NULL,
+  `persent` int(11) DEFAULT NULL,
   `date` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
